@@ -2,6 +2,11 @@
   background-color: blanchedalmond;
 }
 
-button {
+button:hover {
   color: orange;
+  background-color: green;
+}
+div {
+  display: flex;
+  justify-content: space-evenly;
 }
