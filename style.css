@@ -1,5 +1,10 @@
 body {
-  background-image: url("/bugsbunnyworld.jpg")
+  background-image: url("/bugsbunnyworld.jpg");
+}
+
+button {
+  border-radius: 60%;
+
 }
 
 button:hover {
