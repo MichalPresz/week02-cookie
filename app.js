@@ -25,11 +25,13 @@ function buyCookie() {
 }
 
 function buyUpgrade() {
-  stats.cps++;
-  stats.cookieCount = 10;
-  stats.cookieCount -= 10;
-  updatePage();
-  updateStorage();
+  if (stats.cookieCount >= 10) {
+    stats.cookieCount -= 10;
+    stats.cps++;
+
+    updatePage();
+    updateStorage();
+  }
 }
 
 function updatePage() {
