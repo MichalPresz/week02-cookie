@@ -38,6 +38,7 @@ function updatePage() {
 function updateStorage() {
   localStorage.setItem("stats", JSON.stringify(stats));
 }
+
 function restartGame() {
   stats.cookieCount = 0;
   stats.cps = 0;
