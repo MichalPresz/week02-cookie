@@ -7,6 +7,7 @@ const restartBtn = document.getElementById("restartBtn");
 const stats = {
   cookieCount: 0,
   cps: 0,
+  upgrade: 10,
 };
 
 const storageStats = JSON.parse(localStorage.getItem("stats"));
@@ -25,6 +26,7 @@ function buyCookie() {
 
 function buyUpgrade() {
   stats.cps++;
+  stats.cookieCount = 10;
   stats.cookieCount -= 10;
   updatePage();
   updateStorage();
